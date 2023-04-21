@@ -1,0 +1,51 @@
+<div class="modal fade" id="profileModal" aria-hidden="true" aria-labelledby="profileModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel">profile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/profile" method="POST">
+                    <div class="mb-3">
+                      <label for="avatar" class="form-label">Choose Image</label>
+                      <input type="file" class="form-control" name="avatar" id="avatar" placeholder="select an image" aria-describedby="fileHelper">
+                      <div id="fileHelper" class="form-text">Select a valid image</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">City</label>
+                        <select class="form-select form-select-lg" name="" id="">
+                            <option selected disabled>Select one</option>
+                            <option value="new delhi">New Delhi</option>
+                            <option value="istanbul">Istanbul</option>
+                            <option value="jakarta">Jakarta</option>
+                            <option value="lucknow">Lucknow</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label>Gender</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="female"
+                                    value="{3:option1}">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="M">
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="not_preferred" value="O">
+                                <label class="form-check-label" for="not_preferred">Not preferred to say</label>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-success">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
