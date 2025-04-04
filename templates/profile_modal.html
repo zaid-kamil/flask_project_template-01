@@ -6,20 +6,24 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="/profile" method="POST">
+                <form action="/profile/add" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
                       <label for="avatar" class="form-label">Choose Image</label>
                       <input type="file" class="form-control" name="avatar" id="avatar" placeholder="select an image" aria-describedby="fileHelper">
                       <div id="fileHelper" class="form-text">Select a valid image</div>
                     </div>
                     <div class="mb-3">
-                        <label for="" class="form-label">City</label>
-                        <select class="form-select form-select-lg" name="" id="">
+                        <label for="city" class="form-label">City</label>
+                        <select class="form-select form-select-lg" name="city" id="city" aria-label=".form-select-lg example">
                             <option selected disabled>Select one</option>
                             <option value="new delhi">New Delhi</option>
                             <option value="istanbul">Istanbul</option>
                             <option value="jakarta">Jakarta</option>
                             <option value="lucknow">Lucknow</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="new york">New York</option>
+                            <option value="paris">Paris</option>
+                            <option value="rome">Rome</option>
                         </select>
                     </div>
                     <div class="mb-3">
